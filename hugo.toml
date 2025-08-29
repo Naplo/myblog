@@ -1,0 +1,80 @@
+baseurl = "https://naplo.github.io/github.io/"
+defaultContentLanguage = "zh"
+languageCode = "zh"
+title = "Shoumin'Blog"
+theme = "hugo-theme-dream"
+
+# [services]
+# [services.disqus]
+# shortname = ""
+# [services.googleAnalytics]
+# ID = ""
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "img/background/global-background.jpg"
+# backgroundImageDark = "img/background/road.jpg"
+
+author = "shoumin"
+description = "shoumin的个人博客"
+avatar = "img/avatar/corgi.png"
+headerTitle = "Shoumin'Blog"
+motto = "修德博学 躬行践履"
+
+# footerBottomText = "🦴 Powered by Hugo with theme Dream."
+footerBottomText = '🦴 Powered by <a href="https://gohugo.io/">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream">Dream</a>.'
+
+# rss = true
+
+# utterancesRepo = ""
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""r
+
+# waline = true
+# walineServer = ""
+
+# email = ""
+
+siteStartYear = 2025
+
+favicon = "favicon.ico"
+
+# favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦴</text></svg>"></link>'
+
+
+# Syntax highlighting
+# customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+# reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
+collapseNavItems = ["posts", "categories", "tags"]
+noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+reorderShares = [""]
+
+# [params.navItems]
+
+# [params.twikoo]
+# enabled = true
+# envID = ""
+# region = ""
+# lang = ""
+
+# [params.advanced]
+# customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
