@@ -13,7 +13,7 @@ categories:
 tags:
   - 计算机
   - 实践
-# nolastmod: true
+nolastmod: true
 draft: false
 ---
 
@@ -68,7 +68,7 @@ Hugo常用命令如下：
 4. 使用vscode打开mysite文件夹
 5. 打开根目录下的 hugo.toml，修改配置内容：
 	1. 修改基础配置
-  ![alt text](<Pasted image 20250829151606.png>)
+  ![alt text](image-10.png)
 	2. 修改参数配置
   ![alt text](<Pasted image 20250829152753.png>)
   ![alt text](<Pasted image 20250829152816.png>)
@@ -131,7 +131,7 @@ hugo new posts/title
 其中比较重要的是：author【作者】、cover【头图】、categories【分类】、tags【标签】、draft【草稿标记】。
 
 ### 编写博文
-需要使用markdown语法结合html标记来编写博文，推荐使用vscode编写。
+需要使用markdown语法结合html标记来编写博文，推荐使用vscode编写，方便使用git插件同步到GitHub。
 
 obsidian等笔记软件的md语法不一定兼容，需要注意。
 
@@ -139,3 +139,10 @@ obsidian等笔记软件的md语法不一定兼容，需要注意。
 归档页是按时间顺序展示所有博文的页面，默认按年分组，可以在posts/目录下创建_index.md文件来自定义格式，参考[dream主题文档](https://hugo-theme-dream.g1en.site/archives-page)。
 
 ![alt text](image-5.png)
+
+### 修改搜索页
+搜索页是hugo提供的一个博文搜索页，需要创捷以下目录结构：content/serach/_index.md。其中_index.md可以是空的，但必须存在。
+![alt text](image-9.png)
+
+## 遇到的问题
+这次搭建个人博客的过程中遇到了许许多多的问题，有些是因为文档阅读不仔细（如hugo.toml配置文件中关于网站icon路径、博文中的cover图路径、文章的share按钮等），有些是因为markdown和html语法不熟悉（如网站的注脚中的超链接修改），其中有个问题是所有教程里都没说到的，就是将网站部署到GitHub Pages之后css和js失效了，这个问题最后是参考了[这个链接](https://spartanmans.github.io/posts/hugobug/)，在hugo.toml中增加了两行解决了问题。

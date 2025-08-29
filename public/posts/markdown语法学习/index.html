@@ -1,0 +1,129 @@
+<!doctype html><html lang=zh x-data :class=$store.darkMode.class() :data-theme=$store.darkMode.theme()><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Markdown语法学习 | Shoumin'Blog</title><link href=/favicon.ico rel=icon type=image/x-icon><link rel=canonical href=https://naplo.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/><meta name=author content="Naplo"><meta name=description content="为了方便写博文，需要熟练掌握markdown语法，在此作为学习记录。
+"><meta name=keywords content="计算机,学习"><meta name=generator content="Hugo 0.149.0"><meta property="og:url" content="https://naplo.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/"><meta property="og:site_name" content="Shoumin'Blog"><meta property="og:title" content="Markdown语法学习"><meta property="og:description" content="为了方便写博文，需要熟练掌握markdown语法，在此作为学习记录。"><meta property="og:locale" content="zh"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-08-29T20:41:43+08:00"><meta property="article:modified_time" content="2025-08-29T20:41:43+08:00"><meta property="article:tag" content="计算机"><meta property="article:tag" content="学习"><meta property="og:image" content="https://naplo.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/SNAFFUR.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://naplo.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/SNAFFUR.png"><meta name=twitter:title content="Markdown语法学习"><meta name=twitter:description content="为了方便写博文，需要熟练掌握markdown语法，在此作为学习记录。"><link rel=stylesheet href=/css/output.min.css><style>pre{padding:1em;overflow:auto}</style><script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js integrity="sha256-PtHu0lJIiSHfZeNj1nFd6wTX+Squ255SGZ/fc8seCtM=" crossorigin=anonymous></script></head><body x-data="{
+    flip: false,
+  }"><div id=dream-global-bg></div><nav x-data="{ isSticky: false }" x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })" class="sticky top-0 z-30 mt-4 lg:mt-8 py-4" :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }"><div class="container flex justify-between px-4"><section class="flex items-center gap-4"><div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title=翻转一下！><div class="h-10 rounded-full"><img src=/img/avatar/corgi.png alt="Shoumin'Blog"></div></div><div><a href=https://naplo.github.io/ class="text-lg font-semibold cursor-pointer">Shoumin'Blog</a><div class="text-base-content/60 text-sm">修德博学 躬行践履</div></div></section><div class="dropdown dropdown-end sm:hidden"><div tabindex=0 role=button class="btn btn-ghost btn-square" aria-label="Select an option"><ion-icon name=menu class=text-2xl></ion-icon></div><ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md"><li><div role=link tabindex=0 class="inline-flex items-center p-2 cursor-pointer" @click="flip = !flip" title=关于><ion-icon name=information-circle></ion-icon>关于</div></li><li><a class="group inline-flex items-center p-2 cursor-pointer" href=/search title=搜索><ion-icon name=search></ion-icon>搜索</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/posts title=归档><ion-icon name=archive></ion-icon>归档</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/categories title=所有分类><ion-icon name=grid></ion-icon>所有分类</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/tags title=所有标签><ion-icon name=pricetags></ion-icon>所有标签</a></li></ul></div><section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4"><div role=link tabindex=0 class="text-sm font-semibold cursor-pointer hover:underline" @click="flip = !flip" title=关于>关于</div><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href=/search title=搜索><ion-icon class=group-hover:text-primary-content name=search></ion-icon></a><div class="dropdown dropdown-end dropdown-hover"><div tabindex=0 role=button class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option"><ion-icon class="group-hover:text-primary-content text-xl" name=menu></ion-icon></div><ul tabindex=0 class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-xl"><li><a class="inline-flex items-center p-2 cursor-pointer" href=/posts title=归档><ion-icon name=archive></ion-icon>归档</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/categories title=所有分类><ion-icon name=grid></ion-icon>所有分类</a></li><li><a class="inline-flex items-center p-2 cursor-pointer" href=/tags title=所有标签><ion-icon name=pricetags></ion-icon>所有标签</a></li></ul></div></section></div></nav><div class=flip-container :class="{ 'flip-it': flip }"><div class=flipper><div class=front><div class=container><div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4"><div class="hidden lg:block"></div><div class=lg:col-span-2><article class="mx-auto prose prose-quoteless dark:prose-invert" id=dream-single-post-main itemscope itemtype=http://schema.org/Article><meta itemprop=name content="Markdown语法学习"><meta itemprop=description content="为了方便写博文，需要熟练掌握markdown语法，在此作为学习记录。"><meta itemprop=datePublished content="2025-08-29T20:41:43+08:00"><meta itemprop=dateModified content="2025-08-29T20:41:43+08:00"><meta itemprop=wordCount content="3086"><meta itemprop=image content="https://naplo.github.io/posts/markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/SNAFFUR.png"><meta itemprop=keywords content="计算机,学习"><header><h1 itemprop=headline>Markdown语法学习</h1><p class=text-sm><span data-format=luxon>2025-08-29T20:41:43+08:00</span>
+| <span>7分钟阅读</span></p><div class="flex justify-between"><div class="flex items-center"><span>@</span>
+<span itemprop=author itemscope itemtype=https://schema.org/Person><span itemprop=name>Naplo</span></span></div><div class="flex items-center gap-2"><a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href target=_blank rel="noopener noreferrer" title="Share on "><ion-icon class=group-hover:text-primary-content name=logo-></ion-icon></a></div></div></header><section id=dream-single-post-content itemprop=articleBody><img class="w-full z-30" src=SNAFFUR.png alt=Markdown语法学习><p>为了方便写博文，需要熟练掌握markdown语法，在此作为学习记录。</p><h2 id=前言>前言</h2><p>我本来想使用obsidian来编写博文，但是发现有些语法在GitHub Pages上无法渲染，在找到解决方案之前，只能先使用vscode+原生md语法来编写了。</p><h2 id=参考资料>参考资料</h2><ol><li><a href=https://markdown.com.cn/ target=_blank>Markdown教程</a></li></ol><h2 id=基础语法>基础语法</h2><h3 id=标题>标题</h3><p>markdown的标题需要在标题内容前输入多个<code>#</code>号（数量表示标题等级），中间使用一个空格<code> </code>分隔，例如：</p><pre tabindex=0><code>#### 这是四级标题
+</code></pre><p>渲染效果：</p><h4 id=这是四级标题>这是四级标题</h4><p>markdown的标题最多有6级。</p><h3 id=段落>段落</h3><p>markdown中的段落需要使用空白行将多行文字分隔，否则将被视为一个被空格分隔的段落，例如：</p><pre tabindex=0><code>这是一个
+段落
+
+这是第二个
+
+段落
+</code></pre><p>渲染效果：</p><p>这是一个
+段落</p><p>这是第二个</p><p>段落</p><p>在md文档中，通常不建议首行缩进。</p><h3 id=换行>换行</h3><p>想要在一个段落中换行，需要在行末添加两个空格<code> </code>，例如：</p><pre tabindex=0><code>这是第一行文字  
+这是第二行文字
+
+这是第二段文字
+</code></pre><p>渲染效果：</p><p>这是第一行文字<br>这是第二行文字</p><p>这是第二段文字</p><h3 id=强调>强调</h3><p>markdown中有两种强调格式：粗体和斜体。</p><p>粗体：在需要强调的内容前后使用两个星号<code>**</code>或下划线<code>__</code>。<br>斜体：在需要强调的内容前后使用一个星号<code>*</code>或下划线<code>_</code>。</p><p>例如：</p><pre tabindex=0><code>这是**粗体**  
+这是*斜体*
+</code></pre><p>渲染效果：</p><p>这是<strong>粗体</strong><br>这是<em>斜体</em></p><h3 id=引用>引用</h3><p>要创建一个引用块，需要在段落前使用右尖括号<code>></code>，例如：</p><pre tabindex=0><code>&gt;这是一个引用块
+&gt;
+&gt;&gt;这是一个嵌套引用块
+</code></pre><p>渲染效果：</p><blockquote><p>这是一个引用块</p><blockquote><p>这是一个嵌套引用块</p></blockquote><ul><li>其他元素</li></ul></blockquote><p>引用块支持嵌套、多段落、其他元素。</p><h3 id=列表>列表</h3><p>markdown支持创建两种列表：有序列表和无序列表。</p><p>有序列表：在列表项前添加数字并紧跟一个英文句点和空格<code>1. </code>。<br>无序列表：在列表项前添加一个减号和空格<code>- </code>，或加号和空格<code>+ </code>，或星号和空格<code>* </code>。</p><p>例如：</p><pre tabindex=0><code>1. 第一项
+3. 第三项
+2. 第二项
+    1. 嵌套列表
+    - 嵌套列表
+
+- 无序列表
+    1. 嵌套列表
+</code></pre><p>渲染效果：</p><ol><li>第一项</li><li>第三项</li><li>第二项<ol><li>嵌套列表</li></ol><ul><li>嵌套列表</li></ul></li></ol><ul><li>无序列表<ol><li>嵌套列表</li></ol></li></ul><p>有序列表的数字不必按数学顺序排列，但列表应当以数字1起始。<br>列表可以相互嵌套，也可以嵌套其他元素，例如引用块、代码块、图片。</p><h3 id=代码>代码</h3><p>markdown支持两种代码格式：行内代码和代码块。</p><p>行内代码：在需要表示为代码的内容前后使用反引号<code>`</code>分隔。<br>代码块：将代码块的每一行缩进至少四个空格或一个制表符。</p><p>例如：</p><pre tabindex=0><code>这是`行内代码`
+
+    &amp;lt;html&gt;
+      &amp;lt;head&gt;
+      &amp;lt;head&gt;
+    &amp;lt;html&gt;
+</code></pre><p>渲染结果如下：</p><p>这是<code>行内代码</code></p><pre><code>&amp;lt;html&gt;
+  &amp;lt;head&gt;
+  &amp;lt;head&gt;
+&amp;lt;html&gt;
+</code></pre><h3 id=分割线>分割线</h3><p>markdown中创建分割线，需要在单独一行中使用三个或多个星号<code>***</code>、减号<code>---</code>或下划线<code>___</code>，并且不能包含其他内容。例如：</p><pre tabindex=0><code>***
+
+---
+
+___
+</code></pre><p>渲染效果是一样的：</p><hr><h3 id=链接>链接</h3><p>markdown中创建链接的完整语法为：<code>[超链接显示名](超链接地址 "超链接title")</code>。</p><p>其中超链接title部分是可选的，并且超链接显示名和超链接本身支持其他格式化符号（如加粗、斜体、代码、列表、引用等）。</p><p>对于简单的网址和邮箱地址，可以使用尖括号分隔表示。</p><p>例如：</p><pre tabindex=0><code>这是一个[GitHub首页](https://github.com &#34;GitHub&#34;)超链接。
+
+这是一个[`代码样式`](https://github.com)超链接
+
+- 这是一个[列表样式](https://github.com)超链接。
+
+&lt;https://github.com&gt;
+
+&lt;fake@example.com&gt;
+</code></pre><p>渲染效果：</p><p>这是一个<a href=https://github.com title=GitHub target=_blank>GitHub首页</a>
+超链接。</p><p>这是一个<a href=https://github.com target=_blank><code>代码样式</code></a>
+超链接</p><ul><li>这是一个<a href=https://github.com target=_blank>列表样式</a>
+超链接。</li></ul><p><a href=https://github.com target=_blank>https://github.com</a></p><p><a href=mailto:fake@example.com target=_blank>fake@example.com</a></p><h3 id=图片>图片</h3><p>markdown中插入图片的完整语法为：<code>![图片alt](图片资源路径 "图片title")</code>。</p><p>其中图片资源路径可以是网络url，也可以是本地图片的绝对或相对路径。</p><p>可以为图片添加超链接。</p><p>例如：</p><pre tabindex=0><code>![SNAFFUR](SNAFFUR.png &#34;snaffur&#34;)
+
+[![图片不存在](/SNAFFUR.png &#34;snaffur&#34;)](https://naplo.github.io/)
+</code></pre><p>渲染效果：</p><p><img src=SNAFFUR.png alt=SNAFFUR title=snaffur></p><p><a href=https://naplo.github.io/ target=_blank><img src=/SNAFFUR.png alt=图片不存在 title=snaffur></a></p><h3 id=转义字符>转义字符</h3><p>需要显示用于格式化markdown文档的字符，需要在字符前添加反斜杠<code>\</code>。</p><p>例如：</p><pre tabindex=0><code>\* 这是一个句子。
+</code></pre><p>渲染效果：</p><p>* 这是一个句子。</p><p>对于html文档中的特殊字符<code>&lt;</code>和<code>&</code>，markdown支持自动转义，具体参见<a href=https://markdown.com.cn/basic-syntax/escaping-characters.html target=_blank>markdown教程</a>
+。</p><h3 id=内嵌html标签>内嵌HTML标签</h3><p>支持markdown的编辑器会在渲染时将markdown文档转化为html文档，因此，markdown语法本质上是对html语法的封装。</p><p>对于markdown不支持的html标签，可以直接在文档中使用，而不需要额外的标注。</p><p>使用html标签语法有时会比markdown语法要更方便，例如链接标签<code>&lt;a></code>、图片标签<code>&lt;img></code>等，可以很方便地设置文本颜色或图片尺寸。</p><p>行级内联标签：html的行级内联标签（如<code>&lt;span></code>、<code>&lt;cite></code>、<code>&lt;del></code>）可以直接在markdown文档的段落、列表或标题中使用。<br>区块标签：html的区块标签必须在前后加上空行，以便于内容区分，并且不可以使用tab或空格来缩进这些元素的开始和结尾标签。</p><p>例如：</p><pre tabindex=0><code>&lt;cite&gt;**斜体**&lt;/cite&gt;**行内级联标签**
+
+上文
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;**区块标签**&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;table&gt;
+
+下文
+</code></pre><p>渲染效果：</p><p><strong>斜体</strong>行内级联标签</p><p>上文</p><p>下文</p><p>注意，在html区块标签内markdown语法将失效。</p><h2 id=扩展语法>扩展语法</h2><h3 id=表格>表格</h3><p>markdown支持使用管道符<code>|</code>和三个或以上的分隔符<code>---</code>创建列表，例如：</p><pre tabindex=0><code>|序号|姓名|
+|----|---|
+|1|张三|
+|2|李四|
+</code></pre><p>渲染效果：</p><table><thead><tr><th>序号</th><th>姓名</th></tr></thead><tbody><tr><td>1</td><td>张三</td></tr><tr><td>2</td><td>李四</td></tr></tbody></table><p><strong>对齐</strong>：可以通过在标题分隔行中使用冒号<code>:</code>来设置列的对齐方式，例如：</p><pre tabindex=0><code>|序号   |姓名   |性别|
+|:----|---:|:---:|
+|1|张三|男|
+|2|李老四|男|
+</code></pre><p>渲染效果：</p><table><thead><tr><th style=text-align:left>序号</th><th style=text-align:right>姓名</th><th style=text-align:center>性别</th></tr></thead><tbody><tr><td style=text-align:left>1</td><td style=text-align:right>张三</td><td style=text-align:center>男</td></tr><tr><td style=text-align:left>2</td><td style=text-align:right>李老四</td><td style=text-align:center>男</td></tr></tbody></table><p><strong>格式化</strong>：表格内的文字支持使用markdown的强调、链接、行内代码语法。</p><h3 id=围栏代码块>围栏代码块</h3><p>更常用的代码块语法是在代码块前后行添加三个反引号<code>```</code>，并且可以在代码块前反引号旁标注语法高亮类型，例如：</p><pre><code>```python
+print(&quot;hello world&quot;)
+```
+</code></pre><p>渲染结果：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>print(<span style=color:#e6db74>&#34;hello world&#34;</span>)
+</span></span></code></pre></div><h3 id=脚注>脚注</h3><p>markdown支持创建和引用脚注。</p><p>创建脚注的语法格式：<code>[^1]: 脚注参考</code>。<br>引用脚注的语法格式：<code>脚注引用[^1]</code>。</p><p>例如：</p><pre tabindex=0><code>Here&#39;s a simple footnote,[^1] and here&#39;s a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here&#39;s one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
+</code></pre><p>渲染效果：</p><p>Here&rsquo;s a simple footnote,<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup> and here&rsquo;s a longer one.<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup></p><p>脚注参考可以放在除列表、引用、表格之外的任何位置，而不需要放在文档末尾，渲染时会自动在末尾生成。<br>脚注标识可以是数字或字母，脚注引用会自动按顺序编号。</p><h3 id=标题编号>标题编号</h3><p>大部分markdown处理器支持给标题进行自动编号，以便于生成目录或者链接到标题的网页链接。</p><p>还有一部分markdown处理器支持给标题进行自定义编号，例如：</p><pre tabindex=0><code>#### 四级标题 {#custom-id}
+</code></pre><p>渲染结果：</p><h4 id=custom-id>四级标题</h4><p><img src=image-1.png alt="alt text"></p><h3 id=定义列表>定义列表</h3><p>一些markdown处理器支持创建术语及其对应的定义列表，具体语法为：在第一行输入术语，在下一行输入一个冒号和定义，中间使用空格分隔，例如：</p><pre tabindex=0><code>First Term
+: This is the definition of the first term.
+
+Second Term
+: This is one definition of the second term.
+: This is another definition of the second term.
+</code></pre><p>渲染效果：</p><dl><dt>First Term</dt><dd>This is the definition of the first term.</dd><dt>Second Term</dt><dd>This is one definition of the second term.</dd><dd>This is another definition of the second term.</dd></dl><h3 id=删除线>删除线</h3><p>使用删除线，需要在被标注删除的内容前后添加两个波浪线<code>~~</code>，例如：</p><pre tabindex=0><code>这是~~删除线~~。
+</code></pre><p>渲染效果：</p><p>这是<del>删除线</del>。</p><h3 id=任务列表>任务列表</h3><p>创建任务列表，需要在任务项前添加一个减号和一对方括号，中间用空格分隔，例如：</p><pre tabindex=0><code>- [x] 任务1
+- [ ] 任务2
+</code></pre><p>渲染效果：</p><ul><li><input checked disabled type=checkbox> 任务1</li><li><input disabled type=checkbox> 任务2</li></ul><h3 id=emoji>emoji</h3><p>一些markdown处理器支持直接复制粘贴emoji，或者使用emoji简码，例如：</p><pre tabindex=0><code>去露营了！ ⛺ 很快回来。
+
+真好笑！ 😂
+</code></pre><p>渲染效果：</p><p>去露营了！ ⛺ 很快回来。</p><p>真好笑！ 😂</p><h3 id=自动网址链接>自动网址链接</h3><p>许多markdown处理器会自动将url转换为链接，即使没有使用尖括号，此时可以使用反引号`来消除链接，例如：</p><pre tabindex=0><code>https://github.com
+
+`https://github.com`
+</code></pre><p>渲染效果：</p><p><a href=https://github.com target=_blank>https://github.com</a></p><p><code>https://github.com</code></p><h2 id=语法变通>语法变通</h2><p>除此之外，还有一些语法变通技巧非常使用，参见<a href=https://markdown.com.cn/hacks.html target=_blank>markdown教程</a>
+。</p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>This is the first footnote.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>Here&rsquo;s one with multiple paragraphs and code.</p><p>Indent paragraphs to include them in the footnote.</p><p><code>{ my code }</code></p><p>Add as many paragraphs as you like.&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></section><div class=divider></div><div class="flex flex-col md:flex-row justify-between gap-4 py-4"><div></div><a role=button class="btn btn-outline h-12" href=/posts/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B%E8%AE%B0%E5%BD%95/ title=博客搭建过程记录><div class="inline-flex flex-col items-end"><span class="text-base-content/60 text-xs font-normal">下一页</span>
+<span class="max-w-48 truncate">博客搭建过程记录</span></div><ion-icon name=chevron-forward></ion-icon></a></div></article></div><div x-data=tocHighlighter() @scroll.window=debouncedScroll class="hidden lg:flex lg:flex-col lg:items-end"><nav id=TableOfContents><ul><li><a href=#前言>前言</a></li><li><a href=#参考资料>参考资料</a></li><li><a href=#基础语法>基础语法</a><ul><li><a href=#标题>标题</a></li><li><a href=#段落>段落</a></li><li><a href=#换行>换行</a></li><li><a href=#强调>强调</a></li><li><a href=#引用>引用</a></li><li><a href=#列表>列表</a></li><li><a href=#代码>代码</a></li><li><a href=#分割线>分割线</a></li><li><a href=#链接>链接</a></li><li><a href=#图片>图片</a></li><li><a href=#转义字符>转义字符</a></li><li><a href=#内嵌html标签>内嵌HTML标签</a></li></ul></li><li><a href=#扩展语法>扩展语法</a><ul><li><a href=#表格>表格</a></li><li><a href=#围栏代码块>围栏代码块</a></li><li><a href=#脚注>脚注</a></li><li><a href=#标题编号>标题编号</a></li><li><a href=#定义列表>定义列表</a></li><li><a href=#删除线>删除线</a></li><li><a href=#任务列表>任务列表</a></li><li><a href=#emoji>emoji</a></li><li><a href=#自动网址链接>自动网址链接</a></li></ul></li><li><a href=#语法变通>语法变通</a></li></ul></nav></div></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 Shoumin'Blog</p><p>🦴 Powered by <a href=https://gohugo.io/>Hugo</a> with theme <a href=https://github.com/g1eny0ung/hugo-theme-dream>Dream</a>.</p></div><div x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div><div class=back><div class=container><div class="dream-grid dream-grid-about"><div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column"><article class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"><div class=card-body><div class=card-title>About Me</div><div class="prose dark:prose-invert"><p>Hi, my name is shoumin, you can call me Naplo.</p><p>This is my blog.</p></div></div></article></div><div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column"><article class="card bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"><div class=card-body><div class=card-title>社交链接</div><ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg"><li><a href=https://github.com/Naplo target=_blank title=GitHub><ion-icon name=logo-github></ion-icon></a></li></ul></div></article></div></div><footer class="flex justify-between items-center gap-2 px-4 py-12"><div><p>© 2025 Shoumin'Blog</p><p>🦴 Powered by <a href=https://gohugo.io/>Hugo</a> with theme <a href=https://github.com/g1eny0ung/hugo-theme-dream>Dream</a>.</p></div><div x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }" class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"><template x-for="icon in icons"><div role=button tabindex=0 :aria-label="'Select ' + icon.name + ' mode'" class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary" :class="$store.darkMode.icon() === icon.name && 'bg-primary'" @click=$store.darkMode.toggle(icon.status)><ion-icon :name="`${icon.name}-outline`" class=group-hover:text-primary-content :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"></ion-icon></div></template></div></footer></div></div></div></div><script>window.lightTheme="emerald",window.darkTheme="forest"</script><script src=https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin=anonymous></script><script src=https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin=anonymous></script><script src=/js/grid.min.js></script><script src=/js/main.min.js></script><script src=https://cdn.jsdelivr.net/npm/luxon@1.26.0 integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0=" crossorigin=anonymous></script><script>format();function format(){document.querySelectorAll('span[data-format="luxon"]').forEach(e=>{const t=e.textContent;e.textContent=luxon.DateTime.fromISO(t,{locale:"zh"}).toFormat("yyyy年MM月dd日")})}</script><script src=/js/toc.min.js></script><script type=module>
+      import mediumZoom from 'https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/+esm';
+      mediumZoom('#dream-single-post-content img', {
+        background: 'oklch(var(--b1))',
+        margin: 24,
+      })
+    </script><script type=module src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin=anonymous></script><script nomodule src=https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin=anonymous></script></body></html>

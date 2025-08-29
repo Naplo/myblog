@@ -1,6 +1,7 @@
 baseurl = "https://naplo.github.io"  #github pages 网址，后续部署时修改
 defaultContentLanguage = "zh"  #网站语言国际化选项
 languageCode = "zh"  #文章编码语言国际化选型
+hasCJKLanguage = true  #为了正确估计中文文章阅读时间
 title = "Shoumin'Blog"  #网站标题
 theme = "hugo-theme-dream"  #hugo主题名，此处需与themes文件夹下的主题文件夹名称一致
 
@@ -57,7 +58,7 @@ favicon = "favicon.ico"  #网站图标，图标文件放到static/img/路径下
 stickyNav = true
 # reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
 collapseNavItems = ["posts", "categories", "tags"]  #折叠导航选型
-noDefaultSummaryCover = true
+# noDefaultSummaryCover = true
 showTableOfContents = true
 showSummaryCoverInPost = true  #显示文字头图
 imageZoomableInPost = true
