@@ -13,8 +13,8 @@ theme = "hugo-theme-dream"
 [params]
 # zenMode = true
 
-# lightTheme = "emerald"
-# darkTheme = "forest"
+lightTheme = "emerald"
+darkTheme = "forest"
 
 # backgroundImage = "img/background/global-background.jpg"
 # backgroundImageDark = "img/background/road.jpg"
@@ -48,6 +48,7 @@ favicon = "favicon.ico"
 # favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦴</text></svg>"></link>'
 
 
+
 # Syntax highlighting
 # customSyntaxHighlighting = true
 
@@ -78,3 +79,6 @@ reorderShares = [""]
 [params.experimental]
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
+
+[params.assets]
+disableFingerprinting = true
