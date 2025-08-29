@@ -34,4 +34,4 @@ jobs:
           external_repository: Naplo/naplo.github.io # Set the target repository
           publish_dir: ./public
           publish_branch: main # Set the target branch
-          cname: xxx.com # If you have a custom domain
+          # cname: xxx.com # If you have a custom domain

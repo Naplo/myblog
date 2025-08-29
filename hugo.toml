@@ -1,4 +1,4 @@
-baseurl = "https://naplo.github.io/github.io/"
+baseurl = "https://naplo.github.io"
 defaultContentLanguage = "zh"
 languageCode = "zh"
 title = "Shoumin'Blog"
@@ -13,8 +13,8 @@ theme = "hugo-theme-dream"
 [params]
 # zenMode = true
 
-lightTheme = "emerald"
-darkTheme = "forest"
+# lightTheme = "emerald"
+# darkTheme = "forest"
 
 # backgroundImage = "img/background/global-background.jpg"
 # backgroundImageDark = "img/background/road.jpg"
