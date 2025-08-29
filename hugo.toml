@@ -1,8 +1,8 @@
-baseurl = "https://naplo.github.io"
-defaultContentLanguage = "zh"
-languageCode = "zh"
-title = "Shoumin'Blog"
-theme = "hugo-theme-dream"
+baseurl = "https://naplo.github.io"  #github pages 网址，后续部署时修改
+defaultContentLanguage = "zh"  #网站语言国际化选项
+languageCode = "zh"  #文章编码语言国际化选型
+title = "Shoumin'Blog"  #网站标题
+theme = "hugo-theme-dream"  #hugo主题名，此处需与themes文件夹下的主题文件夹名称一致
 
 # [services]
 # [services.disqus]
@@ -19,12 +19,13 @@ darkTheme = "forest"
 # backgroundImage = "img/background/global-background.jpg"
 # backgroundImageDark = "img/background/road.jpg"
 
-author = "shoumin"
-description = "shoumin的个人博客"
-avatar = "img/avatar/corgi.png"
-headerTitle = "Shoumin'Blog"
-motto = "修德博学 躬行践履"
+author = "shoumin"  #网站作者
+description = "shoumin的个人博客"  #网站描述
+avatar = "img/avatar/corgi.png"  #个人头像，头像文件放到static/img/avatar/下，文件名保持需一致
+headerTitle = "Shoumin'Blog"  #首页标题
+motto = "修德博学 躬行践履"  #首页格言
 
+# 页脚
 # footerBottomText = "🦴 Powered by Hugo with theme Dream."
 footerBottomText = '🦴 Powered by <a href="https://gohugo.io/">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream">Dream</a>.'
 
@@ -41,9 +42,9 @@ footerBottomText = '🦴 Powered by <a href="https://gohugo.io/">Hugo</a> with t
 
 # email = ""
 
-siteStartYear = 2025
+siteStartYear = 2025  #网站开始年份
 
-favicon = "favicon.ico"
+favicon = "favicon.ico"  #网站图标，图标文件放到static/img/路径下
 
 # favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🦴</text></svg>"></link>'
 
@@ -55,14 +56,14 @@ favicon = "favicon.ico"
 # options
 stickyNav = true
 # reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
-collapseNavItems = ["posts", "categories", "tags"]
+collapseNavItems = ["posts", "categories", "tags"]  #折叠导航选型
 noDefaultSummaryCover = true
 showTableOfContents = true
-showSummaryCoverInPost = true
+showSummaryCoverInPost = true  #显示文字头图
 imageZoomableInPost = true
 showPrevNextPost = true
 # reorderShares = ["x", "facebook", "whatsapp"]
-reorderShares = [""]
+reorderShares = [""]  #重置文章里的分享按钮
 
 # [params.navItems]
 
@@ -78,7 +79,7 @@ reorderShares = [""]
 
 [params.experimental]
 jsDate = true
-jsDateFormat = "yyyy年MM月dd日"
+jsDateFormat = "yyyy年MM月dd日"  #网站日期显示格式
 
 [params.assets]
-disableFingerprinting = true
+disableFingerprinting = true  #添加这两行解决部署到GitHub Pages上css失效问题

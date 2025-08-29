@@ -9,7 +9,7 @@ images:
 categories:
   - Blog
 tags:
-  - "#技术"
+  - 技术
   - 学习
 draft: false
 ---

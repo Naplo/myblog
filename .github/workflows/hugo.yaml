@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  #修改为-latest版本
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
@@ -19,9 +19,9 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.149.0
+          hugo-version: 0.149.0  #修改为自己的版本号
           # hugo extend or not
-          extended: true
+          extended: true  #根据安装的hugo版本修改
 
       - name: Build
         run: hugo --minify
@@ -30,8 +30,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }} # For publishing to the same repository as the source, not for a different repository
-          personal_token: ${{ secrets.NaploBlog }}
-          external_repository: Naplo/naplo.github.io # Set the target repository
+          personal_token: ${{ secrets.NaploBlog }}  #修改为GitHub的token变量名
+          external_repository: Naplo/naplo.github.io # Set the target repository  #修改为博客发布仓库名
           publish_dir: ./public
-          publish_branch: main # Set the target branch
+          publish_branch: main # Set the target branch  #检查git的默认branch名称是否一致
           # cname: xxx.com # If you have a custom domain
