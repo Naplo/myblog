@@ -11,7 +11,7 @@ categories:
 tags:
   - "#技术"
   - 学习
-draft: true
+draft: false
 ---
 
 Cut out summary from your post content here.
