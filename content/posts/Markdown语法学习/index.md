@@ -1,7 +1,7 @@
 ---
 title: Markdown语法学习
 date: 2025-08-29T20:41:43+08:00
-lastmod: 2025-08-29T20:41:43+08:00
+lastmod: 2025-08-30T11:20:06+08:00
 author: Naplo
 # avatar: /img/author.jpg
 # authorlink: https://author.site
@@ -203,10 +203,9 @@ ___
 
 
 ### 链接
-markdown中创建链接的完整语法为：`[超链接显示名](超链接地址 "超链接title")`。
+markdown中创建链接的完整语法为：`[链接显示名](链接地址 "链接title")`。
 
-其中超链接title部分是可选的，并且超链接显示名和超链接本身支持其他格式化符号（如加粗、斜体、代码、列表、引用等）。
-
+其中链接title部分是可选的，并且链接显示名和链接本身支持其他格式化符号（如加粗、斜体、代码、列表、引用等）。  
 对于简单的网址和邮箱地址，可以使用尖括号分隔表示。  
 
 
@@ -276,12 +275,9 @@ markdown中插入图片的完整语法为：`![图片alt](图片资源路径 "�
 
 
 ### 内嵌HTML标签
-支持markdown的编辑器会在渲染时将markdown文档转化为html文档，因此，markdown语法本质上是对html语法的封装。
-
-对于markdown不支持的html标签，可以直接在文档中使用，而不需要额外的标注。
-
-使用html标签语法有时会比markdown语法要更方便，例如链接标签`<a>`、图片标签`<img>`等，可以很方便地设置文本颜色或图片尺寸。
-
+支持markdown的编辑器会在渲染时将markdown文档转化为html文档，因此，markdown语法本质上是对html语法的封装。  
+对于markdown不支持的html标签，可以直接在文档中使用，而不需要额外的标注。  
+使用html标签语法有时会比markdown语法要更方便，例如链接标签`<a>`、图片标签`<img>`等，可以很方便地设置文本颜色或图片尺寸。  
 行级内联标签：html的行级内联标签（如`<span>`、`<cite>`、`<del>`）可以直接在markdown文档的段落、列表或标题中使用。  
 区块标签：html的区块标签必须在前后加上空行，以便于内容区分，并且不可以使用tab或空格来缩进这些元素的开始和结尾标签。
 
@@ -411,8 +407,7 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 
 ### 标题编号
-大部分markdown处理器支持给标题进行自动编号，以便于生成目录或者链接到标题的网页链接。
-
+大部分markdown处理器支持给标题进行自动编号，以便于生成目录或者链接到标题的网页链接。  
 还有一部分markdown处理器支持给标题进行自定义编号，例如：
 
 ```
@@ -507,4 +502,192 @@ https://github.com
 
 
 ## 语法变通
-除此之外，还有一些语法变通技巧非常使用，参见[markdown教程](https://markdown.com.cn/hacks.html)。
+除此之外，还有一些语法变通技巧非常实用，例如下划线、文字样式等，参见[markdown教程](https://markdown.com.cn/hacks.html)。
+
+
+### 下划线
+```
+一些文字 <ins>将被加下划线</ins>。
+```
+
+一些文字 <ins>将被加下划线</ins>。
+
+
+### 首行缩进
+```
+&nbsp;&nbsp;&nbsp;&nbsp;这是一个缩进的段落。
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;这是一个缩进的段落。
+
+
+### 文字居中
+```
+<p style="text-align:center">这段文字居中显示。</p>
+```
+
+<p style="text-align:center">这段文字居中显示。</p>
+
+
+### 文字颜色
+```
+<font color="red">这段文字是红色的！</font>
+<p style="color:blue">这段文字是蓝色的。</p>
+```
+
+<font color="red">这段文字是红色的！</font>
+<p style="color:blue">这段文字是蓝色的。</p>
+
+
+### 注释
+```
+这是可见的段落。
+
+[这是一个隐藏的注释]: # 
+
+这是另一个可见的段落。
+```
+
+这是可见的段落。
+
+[这是一个隐藏的注释]: # 
+
+这是另一个可见的段落。
+
+
+### 警告
+```
+> :warning: **警告：** 不要按下大红色按钮！
+
+> :memo: **注意：** 日出很美。
+
+> :bulb: **提示：** 记得珍惜生活中的小事。
+```
+
+> :warning: **警告：** 不要按下大红色按钮！
+
+> :memo: **注意：** 日出很美。
+
+> :bulb: **提示：** 记得珍惜生活中的小事。
+
+
+### 图片大小
+```
+<img src="SNAFFUR.png" width="200" height="100">
+```
+
+<img src="SNAFFUR.png" width="200" height="100">
+
+
+### 图片标题
+```
+<figure>
+    <img src="SNAFFUR.png" alt="描述文本">
+    <figcaption>这是一张描述图片。</figcaption>
+</figure>
+```
+
+<figure>
+    <img src="SNAFFUR.png" alt="描述文本">
+    <figcaption>这是一张描述图片。</figcaption>
+</figure>
+
+或
+
+```
+![描述文本](SNAFFUR.png)  
+*这是一张描述图片。*
+```
+
+![描述文本](SNAFFUR.png)  
+*这是一张描述图片。*
+
+
+### 新标签打开链接
+```
+<a href="https://markdown.com.cn" target="_blank">学习 Markdown！</a>
+```
+
+<a href="https://markdown.com.cn" target="_blank">学习 Markdown！</a>
+
+
+### 特殊字符
+```
+版权 (©) — &copy;
+注册商标 (®) — &reg;
+商标 (™) — &trade;
+欧元 (€) — &euro;
+左箭头 (←) — &larr;
+上箭头 (↑) — &uarr;
+右箭头 (→) — &rarr;
+下箭头 (↓) — &darr;
+度数 (°) — &#176;
+圆周率 (π) — &#960;
+```
+
+版权 (©) — &copy;  
+注册商标 (®) — &reg;  
+商标 (™) — &trade;  
+欧元 (€) — &euro;  
+左箭头 (←) — &larr;  
+上箭头 (↑) — &uarr;  
+右箭头 (→) — &rarr;  
+下箭头 (↓) — &darr;  
+度数 (°) — &#176;  
+圆周率 (π) — &#960;
+
+
+### 表格内样式
+换行：
+```
+| 语法      | 描述         |
+| --------- | ----------- |
+| 换行      | 第一段。<br><br>第二段。 |
+```
+
+| 语法      | 描述         |
+| --------- | ----------- |
+| 换行      | 第一段。<br><br>第二段。 |
+
+嵌入列表：
+```
+| 语法      | 描述         |
+| --------- | ----------- |
+| 列表      | <ul><li>项目一</li><li>项目二</li></ul> |
+```
+
+| 语法      | 描述         |
+| --------- | ----------- |
+| 列表      | <ul><li>项目一</li><li>项目二</li></ul> |
+
+
+### 目录
+```
+#### 目录  
+- [前言](#前言)  
+- [参考资料](#参考资料)  
+- [基础语法](#基础语法)  
+- [标题编号](#custom-id)  
+```
+
+#### 目录  
+- [前言](#前言)  
+- [参考资料](#参考资料)  
+- [基础语法](#基础语法)  
+- [标题编号](#custom-id)  
+
+
+### 插入视频
+```
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+```
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+
+## 心得
+markdown语法简单，可以快速组织文档结构，但遵循一定的规范可以使markdown源码文档更清晰，以下是我的一些心得：
+1. 空行：标题与正文、列表项之间不空行，段落/代码块之间空1行，标题块之间空2行，一段长内容优先使用换行而不是分段。
+2. 标题：从二级标题开始（一级标题太大）
+
+

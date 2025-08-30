@@ -4,6 +4,7 @@ languageCode = "zh"  #文章编码语言国际化选型
 hasCJKLanguage = true  #为了正确估计中文文章阅读时间
 title = "Shoumin'Blog"  #网站标题
 theme = "hugo-theme-dream"  #hugo主题名，此处需与themes文件夹下的主题文件夹名称一致
+markup.goldmark.renderer.unsafe = true  #启用html渲染
 
 # [services]
 # [services.disqus]
@@ -56,8 +57,8 @@ favicon = "favicon.ico"  #网站图标，图标文件放到static/img/路径下
 
 # options
 stickyNav = true
-# reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
-collapseNavItems = ["posts", "categories", "tags"]  #折叠导航选型
+reorderNavItems = ["about", "search", "rss", "posts", "categories", "tags"]
+# collapseNavItems = ["posts", "categories", "tags"]  #折叠导航选型
 # noDefaultSummaryCover = true
 showTableOfContents = true
 showSummaryCoverInPost = true  #显示文字头图
@@ -66,7 +67,9 @@ showPrevNextPost = true
 # reorderShares = ["x", "facebook", "whatsapp"]
 reorderShares = [""]  #重置文章里的分享按钮
 
-# [params.navItems]
+
+[params.navItems]
+github = { href = "https://github.com/Naplo", target = "_blank", icon = "logo-github", title = "GitHub" }
 
 # [params.twikoo]
 # enabled = true
