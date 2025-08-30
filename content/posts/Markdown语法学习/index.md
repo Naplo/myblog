@@ -678,12 +678,25 @@ https://github.com
 
 
 ### 插入视频
+插入B站视频：
+
 ```
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 ```
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe src="https://player.bilibili.com/player.html?isOutside=true&aid=114201066479129&bvid=BV1GPX1YpErE&cid=28993847393&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
+插入本地视频：
+
+```
+<video width="480" height="400" controls>
+ <source src="31813864385-1-192.mp4" type="video/mp4">
+</video>
+```
+
+<video width="480" height="400" controls>
+ <source src="31813864385-1-192.mp4" type="video/mp4">
+</video>
 
 ## 心得
 markdown语法简单，可以快速组织文档结构，但遵循一定的规范可以使markdown源码文档更清晰，以下是我的一些心得：
