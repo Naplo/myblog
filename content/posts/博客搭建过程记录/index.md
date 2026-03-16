@@ -74,7 +74,7 @@ Hugo常用命令如下：
   ![alt text](<Pasted image 20250829152816.png>)
   ![alt text](<Pasted image 20250829152832.png>)
   ![alt text](image-1.png)
-6. 生成静态站点：hugo --gc --minify --cleanFestinationDir
+6. 生成静态站点：hugo --gc --minify --cleanDestinationDir
 
 ### 创建GitHub仓库
 1. 创建博客发布仓库：username/username.github.io（这个名字可以使博客网址比较简短）
@@ -142,7 +142,10 @@ obsidian等笔记软件的md语法不一定兼容，需要注意。
 
 ### 修改搜索页
 搜索页是hugo提供的一个博文搜索页，需要创捷以下目录结构：content/serach/_index.md。其中_index.md可以是空的，但必须存在。
+
 ![alt text](image-9.png)
 
 ## 遇到的问题
 这次搭建个人博客的过程中遇到了许许多多的问题，有些是因为文档阅读不仔细（如hugo.toml配置文件中关于网站icon路径、博文中的cover图路径、文章的share按钮等），有些是因为markdown和html语法不熟悉（如网站的注脚中的超链接修改），其中有个问题是所有教程里都没说到的，就是将网站部署到GitHub Pages之后css和js失效了，这个问题最后是参考了[这个链接](https://spartanmans.github.io/posts/hugobug/)，在hugo.toml中增加了两行解决了问题。
+
+![alt text](image-11.png)
